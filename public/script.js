@@ -28,8 +28,6 @@ if (document.getElementById('menu')) {
   });
 }
 
-
-
 if (document.getElementById('orders')) {
   fetch('/api/orders')
     .then(res => res.json())

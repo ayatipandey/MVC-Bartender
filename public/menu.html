@@ -3,6 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>Cocktail Menu</title>
+
+  <style>
+      body {
+        background-color: lightgoldenrodyellow;
+        font-family: Arial, sans-serif;  
+        text-align: center; 
+      }  
+
+      h2{
+        color: black;
+        font-size: 40px;
+      }  
+
+    ul{
+      text-align: center;
+      list-style-type: none; 
+      padding: 0; 
+      margin: 10;
+    }
+
+    ul li {
+      margin: 12px 0;
+      padding: 6px 0;
+      font-size: 14px; 
+    }
+
+  .link-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    a, button{
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      background-color: rgba(0, 0, 0, 0.3); 
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      border: none;   
+    }     
+
+  input[type="number"],
+  input[type="text"] {
+    padding: 8px;
+    border: 2px solid #ccccccaa;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 200px;        
+    margin-top: 6px;     
+  }
+
+ </style>
+ 
 </head>
 <body>
   <div class="container">
@@ -14,7 +69,7 @@
     <form id="orderForm">
       <div>
         <label for="cocktailId">Cocktail ID:</label>
-        <input type="number" name="cocktailId" id="cocktailId" required>
+       <input type="number" name="cocktailId" id="cocktailId" min="1" max="10" required>
       </div>
       <div>
         <label for="customerName">Your Name:</label>

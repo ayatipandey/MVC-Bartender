@@ -6,7 +6,5 @@ class Order {
     this.status = status;
   }
 }
-
 const orders = []; 
-
 module.exports = { Order, orders };

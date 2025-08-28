@@ -2,11 +2,83 @@
 <html>
 <head>
   <title>Order Queue</title>
+  <style>
+    
+    body {
+      background-color: lightgoldenrodyellow;
+      font-family: Arial, sans-serif;  
+      text-align: center; 
+      padding: 20px;
+    } 
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      margin: 0 auto; 
+      border-collapse: collapse;
+      width: 70%;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      font-size: 14px;
+
+    }
+
+    th {
+      background-color: lightsteelblue;
+      font-weight: bold;
+    }
+    
+    #orders button {
+      padding: 6px 12px;
+      background-color: seagreen;
+      color: white;
+      border: none;
+      font-size: 14px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      background-color: rgba(0, 0, 0, 0.3); 
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+  </style> 
+
 </head>
 <body>
   <h2>Order Queue</h2>
-  <table border="1" id="orders"></table>
+  <table id="orders">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Cocktail</th>
+        <th>Customer</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    </tbody>
+  </table>
+
   <a href="index.html">Back</a>
+
   <script src="script.js"></script>
 </body>
 </html>
